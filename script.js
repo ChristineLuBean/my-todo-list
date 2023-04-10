@@ -81,7 +81,6 @@ function makeNewToDo() {
     );
 
   toDoList.push(newToDo);
-  console.log(toDoList)
   saveUpdatedListToLocalStorage();
   refreshList(() => updatedMessage());
   clearInputs();
@@ -152,10 +151,8 @@ function togglerButton(hiddenItems) {
 
 // Update to-do status on save
 function updateStatus(keyId) {
-  console.log(keyId)
   let success = false;
   const selectedStatus = document.querySelector(`#${keyId}-status`).value;
-  console.log(selectedStatus)
   const toDoItem = toDoList.find((toDoItem) => toDoItem.key = keyId)
 
   if (toDoItem.status !== selectedStatus) {
