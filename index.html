@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      My To-Do List
+    </h1>
+  </header>
+  <main>
+    <h2 id="message"><!--messages displayed here--></h2>
+
+    <ul id="list">
+      <!--To-do items listed in here-->
+    </ul>
+
+    <form class="hidden hide-item">
+      <label for="title">To-do title:</label>
+       <input type="text" value="" name="title" id="todo-title" placeholder="To-do title" />
+      <label for=description">To-do description
+      </label>
+        <input type="text" value="" name="description" id="todo-description" placeholder="To-do description"  />
+    </form>
+
+    <button id="form-toggler" onClick="toggleHidden()">Add to-do</button>
+    <button id="save-todo" class="hidden hide-item" onClick="makeNewToDo()">Save</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
